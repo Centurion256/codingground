@@ -14,16 +14,16 @@ begin
   
   if D>0 then
          begin
-           x1:=-(b-(sqrt(D)))/2*a;
-           x2:=-(B+(sqrt(D)))/2*a;
+           x1:=(-b-(sqrt(D)))/2*a;
+           x2:=(-b+(sqrt(D)))/2*a;
            writeln(x1 :0:3);
            writeln(x2 :0:3);
          end
   else
       if D=0 then
              begin
-               x1:=-(b-0)/2*a;
+               x1:=(-b-0)/2*a;
                writeln(x1 :0:3);
              end
-  else writeln('Ø')             
+      else writeln('Ø')             
 end.
