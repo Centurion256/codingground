@@ -19,7 +19,5 @@ if Age<1
   else
     if Age<60
       then writeln('працівник')
-  else
-    if Age>59
-      then writeln('пенсіонер')
+  else writeln('пенсіонер')
 end.
