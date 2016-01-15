@@ -12,7 +12,7 @@ public class JAge{
             System.out.println("Preschool kid");
         }
         else if (Age<17){
-            System.out.println("Scoolchild");
+            System.out.println("Schoolchild");
         }
         else if (Age<22){
             System.out.println("Student");
