@@ -1,4 +1,4 @@
-Program HelloWorld(output);
+Program Age;
 var
 Age: Integer;
 begin
