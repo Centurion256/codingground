@@ -1,1 +1,0 @@
-{"id":"pascal","ext":"pas","version":"Free Pascal v2.6.2","compile":"fpc -vw BirthDate.pas","execute":"BirthDate","preview":"","command":null,"file":"/home/cg/src/samples/main.pas","url":"compile_pascal_online.php","mode":"pascal"}
