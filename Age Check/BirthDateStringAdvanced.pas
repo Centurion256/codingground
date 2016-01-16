@@ -1,31 +1,35 @@
 Program BirthDateStringAdvanced;
 var
     y,m,d: Integer;
-    S: String;
+    Sy, Sm, Sd, result: String;
 begin
     writeln('Вкажіть ваш рік народження');
     read(y);
-    S:=(IntToStr(y));
+    
     writeln('Вкажіть ваш місяць народження');
     read(m);
-    S:=(IntToStr(m));
+    
     writeln('Вкажіть ваш день народження');
     read(d);
-    S:=(Str(d));
+    
     case m of
-        1  : S:=S+ ' січня ';
-        2  : S:=S+ ' лютого ';
-        3  : S:=S+ ' березня ';
-        4  : S:=S+ ' квітня ';
-        5  : S:=S+ ' травня ';
-        6  : S:=S+ ' червня ';
-        7  : S:=S+ ' липня ';
-        8  : S:=S+ ' серпня ';
-        9  : S:=S+ ' вересня ';
-        10 : S:=S+ ' жовтня ';
-        11 : S:=S+ ' листопада ';
-        12 : S:=S+ ' грудня ';
+        1  : Sm:= ' січня ';
+        2  : Sm:= ' лютого ';
+        3  : Sm:= ' березня ';
+        4  : Sm:= ' квітня ';
+        5  : Sm:= ' травня ';
+        6  : Sm:= ' червня ';
+        7  : Sm:= ' липня ';
+        8  : Sm:= ' серпня ';
+        9  : Sm:= ' вересня ';
+        10 : Sm:= ' жовтня ';
+        11 : Sm:= ' листопада ';
+        12 : Sm:= ' грудня ';
     else writeln('Error');
     end;
-    writeln(d, ' ', S, ' ', y);
+    
+    Str(d, Sd);
+    Str(y, Sy);
+    result:=(Sd+Sm+Sy);
+    writeln(result);
 end.    
