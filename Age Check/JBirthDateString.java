@@ -1,7 +1,8 @@
-public class JBirthDate{
+public class JBirthDateString{
 
     public static void main(String []args){
         
+        String S = "";
         System.out.println("Insert your year of birth");
         int y = Integer.parseInt(System.console().readLine());
         System.out.println("Insert your month of birth");
@@ -58,9 +59,11 @@ public class JBirthDate{
         S = " december ";
         break;
     default:    
-        if (m<0&&m>12){
+        if (m<0||m>12){
         System.out.println("Error");}    
         break;
     }
+System.out.println(d + S + y);
     }
 }    
+
