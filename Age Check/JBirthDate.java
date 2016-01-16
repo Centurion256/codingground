@@ -58,7 +58,7 @@ public class JBirthDate{
         System.out.println(d + "/december/" + y);
         break;
     default:    
-        if (m<0&&m>12){
+        if (m<0||m>12){
         System.out.println("Error");}    
         break;
     }
