@@ -3,12 +3,50 @@ interface
 const n=20;
 type
   intarray = array [1..n] of integer;
-var
-i,k,max,temp: integer;
-A: intarray;
-implementation
-begin
 
+Function ArrayMax(AR:intarray): integer;
+
+Procedure SearchForMax(AR:intarray; var maxx: integer);
+
+Procedure Swap(var a,b:integer);
+
+Procedure Forming(var AR:intarray);
+
+Procedure Output(AR:intarray);
+
+Procedure BubbleSort(var AR:intarray);
+
+
+implementation
+
+Function ArrayMax(AR:intarray): integer;
+var i,maxx: integer;
+begin
+//search for max
+    maxx:=AR[1];
+    for
+    i:= 1 to n do
+    begin
+        if  
+        AR[i] > maxx then
+        maxx:= AR[i]
+    end;
+    ArrayMax:= maxx;
+end;
+
+Procedure SearchForMax(AR:intarray; var maxx: integer);
+var i: integer;
+begin
+//search for max
+    maxx:=AR[1];
+    for
+    i:= 1 to n do
+    begin
+        if  
+        AR[i] > maxx then
+        maxx:= AR[i]
+    end;
+end;
 
 
 Procedure Swap(var a,b:integer);
@@ -20,14 +58,14 @@ begin
 
 end;
 
-Procedure Forming(AR:intarray);
+Procedure Forming(var AR:intarray);
 var i:integer;
 begin
     randomize;
     //forming
     for i:= 1 to n do
     begin
-        A[i]:= round(random()*1000);
+        AR[i]:= round(random()*1000);
     end;
 end;
 
@@ -50,7 +88,7 @@ begin
     begin
         for i:= 1 to n-k do
         begin
-            if A[i]>A[i+1] then
+            if AR[i]>AR[i+1] then
             begin
                 Swap(AR[i],AR[i+1]);
             end;
