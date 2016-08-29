@@ -1,10 +1,10 @@
-Program ArrayMax;
+Program UArrayBubbleSortProcedures;
 uses ArrayTools;
-const n=20;
-type
-  intarray = array [1..n] of integer;
+//const n=20;
+//type
+ // intarray = array [1..n] of integer;
 var
-i,k,max,temp: integer;
+max: integer;
 A: intarray;
 
 Begin
@@ -13,8 +13,14 @@ Begin
 
     Output(A);
     
+    SearchForMax(A,max);
+    
+    //max:=ArrayMax(A);
+    
     BubbleSort(A);
        
     Output(A);
+    
+    writeln ('max = ', max);
     
 End.
