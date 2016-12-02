@@ -12,14 +12,14 @@ import java.util.Random;
     
     }
 */
-     public static void main(String []args){
+     public void main(String []args){
         final int N = 10;  
         int A[] = new int [N];
          
         JArrayTools.Forming(A);
-        JArrayTools.Output(String []); //???
-        JArrayTools.BubbleSort(String []); //???
-        JArrayTools.Output(String []); //???
+        JArrayTools.Output(A); //???
+        JArrayTools.BubbleSort(); //???
+        JArrayTools.Output(A); //???
              /*  
       //forming
         Random gen = new Random();
