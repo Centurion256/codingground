@@ -15,15 +15,16 @@ int A[] = new int [N];
         
         }
  
-    public static void Output(String []args){
+    public void Output(int []OT){
     //Output
         for (int i = 0; i < N; i++)
+        A[i] = OT.length;
         { 
-            System.out.format("%5d " , A[i]);
+            System.out.format("%5d " , OT[i]);
         }
         System.out.println();
     }
-    public static void BubbleSort(String []args){
+    public void BubbleSort(String []args){
     //BubbleSort
             for (int k = 0; k < N-1; k++)
             for (int i = 0; i < N-k-1; i++)
