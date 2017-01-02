@@ -1,32 +1,34 @@
 import java.util.Random;
 
 public class JArrayTools{
-final int N = 10;  
+final static int N = 10;  
 int A[] = new int [N];    
+    JArrayTools(){
+        Forming();
+    }
     //public class JBubbleSort{
-        public static void Forming(int []AR){ 
+        public void Forming(){ 
                 //forming
-            int N = AR.length;   
+            int N = A.length;   
             Random gen = new Random();
             for (int i = 0; i < N; i++) 
             {
-                AR[i]=gen.nextInt(1000);
+                A[i]=gen.nextInt(1000);
             }
-        
+            System.out.println();
         }
  
-    public void Output(int []OT){
+    public void Output(){
     //Output
         for (int i = 0; i < N; i++)
-        A[i] = OT.length;
         { 
-            System.out.format("%5d " , OT[i]);
+            System.out.format("%5d " , A[i]);
         }
         System.out.println();
     }
-    public void BubbleSort(String []args){
+    public void BubbleSort(){
     //BubbleSort
-            for (int k = 0; k < N-1; k++)
+        for (int k = 0; k < N-1; k++)
             for (int i = 0; i < N-k-1; i++)
             {
                 if (A[i] > A[i+1])
