@@ -27,11 +27,12 @@ int A[] = new int [N];
         System.out.println();
     }
     
-    public void Swap(int a, int b){
-        int temp = a;
-        a = b;
-        b = temp;
+/*    public void Swap(int a, int b){
+        //Swapper.Swap(A[i],A[i + 1]);
+        Swapper swap = new Swapper(a,b);
+        swap.Swap();
     }
+*/    
     
     public void BubbleSort(){
     //BubbleSort
@@ -40,7 +41,11 @@ int A[] = new int [N];
             {
                 if (A[i] > A[i+1])
                 {
-                    Swap(A[i],A[i+1]);
+                    Swapper swap = new Swapper(A[i],A[i + 1]);
+                    swap.Swap();
+                    //Swap(A[i],A[i+1]);
+                        A[i] = swap.a;
+                        A[i + 1] = swap.b;
                 }
             }
     } 
@@ -52,5 +57,22 @@ int A[] = new int [N];
      }
 } 
 */
-}
 
+
+    public class Swapper{
+
+        int a;
+        int b;
+
+            Swapper(int a1, int b1){
+                a = a1;
+                b = b1;
+            }
+    
+            void Swap(){
+                int temp = a;
+                    a = b;
+                    b = temp;
+            }
+    }    
+}
