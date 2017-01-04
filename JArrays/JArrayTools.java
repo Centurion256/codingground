@@ -26,6 +26,13 @@ int A[] = new int [N];
         }
         System.out.println();
     }
+    
+    public void Swap(int a, int b){
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+    
     public void BubbleSort(){
     //BubbleSort
         for (int k = 0; k < N-1; k++)
@@ -33,9 +40,7 @@ int A[] = new int [N];
             {
                 if (A[i] > A[i+1])
                 {
-                    int temp = A[i];
-                    A[i] = A[i+1];
-                    A[i+1] = temp;
+                    Swap(A[i],A[i+1]);
                 }
             }
     } 
@@ -48,3 +53,4 @@ int A[] = new int [N];
 } 
 */
 }
+
